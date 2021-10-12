@@ -1,10 +1,14 @@
+import java.util.ArrayList;
+
 public class Node {
+    public ArrayList<Integer> connections = new ArrayList<Integer>();
     int key;
-    Node left, right;
- 
-    public Node(int item)
-    {
-        key = item;
-        left = right = null;
+    Integer father;
+    Node(int key, int father){
+        this.key = key;
+        this.father = father;
+    }
+    Node(int key){
+        this.key = key;
     }
 }

@@ -5,16 +5,18 @@ import java.util.HashMap;
 public class BinaryTree {
     public HashMap<Integer, Node> graph = new HashMap<Integer, Node>();
 
-
     BinaryTree(int root){
         graph.put(root, new Node(root));
     }
 
     public void addTograph(int key, int father){
         graph.put(key, new Node(key, father));
-        graph.get(7).connections.add(key);
     }
-
+// 
+// public void pathfinding{
+//      didnt implement this as it was outside the scope of this assignment.
+// }
+//     
 
     public Integer getAncestor(Integer key){
 
@@ -78,7 +80,10 @@ public class BinaryTree {
          newbin.addTograph(5, 7);
          newbin.addTograph(9,8);
          newbin.addTograph(10,6);
-         System.out.println(newbin.getAncestor(10,7));
+         newbin.addTograph(11, 10);
+         newbin.addTograph(13, 10);
+         newbin.addTograph(23, 6);
+         System.out.println(newbin.getAncestor(23,13));
 
 
 
@@ -86,10 +91,13 @@ public class BinaryTree {
 
 
     //          7
+
     //      /   |    \
     //     /    |     \
     //    6     5      8
-    //   /              \
-    //  10               9
+    //   /  \           \
+    //  10   23          9
+//     /  \
+//    11   13
      }
 }

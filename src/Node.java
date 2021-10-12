@@ -1,7 +1,6 @@
-import java.util.ArrayList;
 
 public class Node {
-    public ArrayList<Integer> connections = new ArrayList<Integer>();
+    // public ArrayList<Integer> connections = new ArrayList<Integer>();
     int key;
     Integer father;
     Node(int key, int father){

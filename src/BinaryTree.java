@@ -1,6 +1,8 @@
+
+
 public class BinaryTree {
      // Root of Binary Tree
-     Node root;
+     public static Node root;
  
      // Constructors
      BinaryTree(int key)
@@ -12,8 +14,16 @@ public class BinaryTree {
      {
          root = null;
      }
+     public static void reorganise(){
+     }
+
+     public static void addToTree(Node parent, int key){
+     }
   
      public static void main(String[] args)
      {
+        BinaryTree tree = new BinaryTree(5);
+
+        System.out.println(root.left.left.key);
      }
 }

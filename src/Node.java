@@ -1,13 +1,10 @@
-
 public class Node {
-    // public ArrayList<Integer> connections = new ArrayList<Integer>();
     int key;
-    Integer father;
-    Node(int key, int father){
-        this.key = key;
-        this.father = father;
-    }
+    public Node left;
+    public Node right;
+
     Node(int key){
         this.key = key;
     }
+    
 }

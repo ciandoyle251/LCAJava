@@ -134,32 +134,32 @@ public class GFG {
     
  
     // Driver code
-    public static void main(String args[])
-    {
-        // root = new Node(10);
-        // root.left = new Node(11);
-        // root.left.left = new Node(7);
-        // root.right = new Node(9);
-        // root.right.left = new Node(15);
-        // root.right.right = new Node(8);
+    // public static void main(String args[])
+    // {
+    //     // root = new Node(10);
+    //     // root.left = new Node(11);
+    //     // root.left.left = new Node(7);
+    //     // root.right = new Node(9);
+    //     // root.right.left = new Node(15);
+    //     // root.right.right = new Node(8);
  
-        // System.out.print(
-        //     "Inorder traversal before insertion:");
-        // inorder(root);
+    //     // System.out.print(
+    //     //     "Inorder traversal before insertion:");
+    //     // inorder(root);
  
-        // int key = 12;
-        // insert(root, key);
-        // key = 13;
-        // insert(root, key);
-        // System.out.print(
-        //     "\nInorder traversal after insertion:");
-        // inorder(root);
-        GFG binTree = new GFG();
-        for(int i = 1; i < 21; i++){
-            binTree.insert(root, i);
-        }
+    //     // int key = 12;
+    //     // insert(root, key);
+    //     // key = 13;
+    //     // insert(root, key);
+    //     // System.out.print(
+    //     //     "\nInorder traversal after insertion:");
+    //     // inorder(root);
+    //     GFG binTree = new GFG();
+    //     for(int i = 1; i < 21; i++){
+    //         binTree.insert(root, i);
+    //     }
 
         
-        System.out.println(binTree.findLCA(20, 19));
-    }
+    //     System.out.println(binTree.findLCA(20, 19));
+    // }
 }

@@ -28,7 +28,7 @@ public class testing {
         assertEquals(9, binTree.findLCA(18,19)); //trivial test
         assertEquals(2, binTree.findLCA(19, 20));//more complicated test
         assertEquals(1, binTree.findLCA(16, 15));//seperate leveled solutions
-        assertEquals(4, binTree.findLCA(16, 4));//ancestors with solution as one of the inputs
-        assertEquals(9, binTree.findLCA(9, 9));//duplicate inputs
+        assertEquals(4, binTree.findLCA(16, 4)); //ancestors with solution as one of the inputs
+        assertEquals(9, binTree.findLCA(9, 9));  //duplicate inputs
     }
 }

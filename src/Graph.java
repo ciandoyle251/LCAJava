@@ -71,15 +71,15 @@ public class Graph {
 
 
 
-    public void LCA(int a, int b){
+    public int LCA(int a, int b){
         ArrayList<Integer> path = new ArrayList<Integer>();
         ArrayList<Integer> path2 = new ArrayList<Integer>();
-        path = shortestPath(6, a, path);
-        path2 = shortestPath(6, b, path2);
-        followPath(path, path2);
+        path = shortestPath(root, a, path);
+        path2 = shortestPath(root, b, path2);
+        return followPath(path, path2);
     }
 
-    public void followPath(ArrayList<Integer> path1, ArrayList<Integer> path2){
+    public int followPath(ArrayList<Integer> path1, ArrayList<Integer> path2){
         ArrayList<Integer> big;
         ArrayList<Integer> small;
         if(path2.size() < path1.size()){
@@ -95,10 +95,11 @@ public class Graph {
             for(int j = small.size() - 1; j >= 0; j--){
                 if(big.get(i) == small.get(j)){
                     System.out.println(big.get(i));
-                    return;
+                    return big.get(i);
                 }
             }
         }
         System.out.println(root);
+        return -1;
     }
 }
